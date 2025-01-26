@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mi-fastapi-app
+    region: oregon 
+    env: python
+    buildCommand: ""
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port 10000"
+    numInstances: 1
+    plan: free
